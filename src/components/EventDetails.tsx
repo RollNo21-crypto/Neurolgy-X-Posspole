@@ -1,5 +1,7 @@
 import React from 'react';
 import { Calendar, MapPin, Clock, Award } from 'lucide-react';
+import aig1 from '../assets/aig1.png';
+import baxterLogo from '../assets/baxter.png';
 
 const EventDetails: React.FC = () => {
   return (
@@ -96,8 +98,8 @@ const EventDetails: React.FC = () => {
                   <h4 className="text-lg font-medium text-gray-700 mb-4">Organized by</h4>
                   <div className="bg-white rounded-lg p-4 flex items-center justify-center">
                     <img
-                      src="./assets/aig.png"
-                      alt="POSSPOLE HEALTH Logo"
+                      src={aig1}
+                      alt="Aig Logo"
                       className="h-20 object-contain"
                     />
                   </div>
@@ -106,7 +108,7 @@ const EventDetails: React.FC = () => {
                   <h4 className="text-lg font-medium text-gray-700 mb-4">Supported by</h4>
                   <div className="bg-white rounded-lg p-4 flex items-center justify-center">
                     <img
-                      src="./assets/baxter-logo.png"
+                      src={baxterLogo}
                       alt="Baxter Logo"
                       className="h-20 object-contain"
                     />

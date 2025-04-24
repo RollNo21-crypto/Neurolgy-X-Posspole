@@ -1,4 +1,6 @@
 import React from 'react';
+import subhodh from '../assets/subhodh.jpg';
+import suneeth from '../assets/suneeth.jpg';
 
 const FacultyMember: React.FC<{
   name: string;
@@ -83,7 +85,7 @@ const Faculty: React.FC = () => {
                 <div className="w-24 h-24 mb-4 relative">
                   <div className="absolute inset-0 bg-blue-400 rounded-full animate-pulse"></div>
                   <img 
-                    src="https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                    src={subhodh}
                     alt="Dr. Subodh Raju" 
                     className="w-full h-full rounded-full object-cover border-4 border-white shadow-xl relative z-10"
                   />
@@ -103,7 +105,7 @@ const Faculty: React.FC = () => {
                 <div className="w-24 h-24 mb-4 relative">
                   <div className="absolute inset-0 bg-blue-400 rounded-full animate-pulse"></div>
                   <img 
-                    src="https://images.pexels.com/photos/5407206/pexels-photo-5407206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                    src={suneeth}
                     alt="Dr. Suneet Jindal" 
                     className="w-full h-full rounded-full object-cover border-4 border-white shadow-xl relative z-10"
                   />
