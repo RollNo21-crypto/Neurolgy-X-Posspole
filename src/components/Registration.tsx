@@ -46,7 +46,7 @@ const Registration: React.FC = () => {
             </div>
 
             <a
-              href="https://forms.gle/sCeJLEvSPje1H8r2A"
+              href="https://forms.gle/JMN2vpPXhb6Cfi9b7"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white text-blue-700 hover:bg-blue-50 font-bold py-3 px-10 rounded-full text-lg shadow-lg transition-all transform hover:scale-105"
