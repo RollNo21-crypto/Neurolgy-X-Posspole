@@ -160,7 +160,7 @@ const EventDetails: React.FC = () => {
                 <img 
                   src= {item1} 
                   alt="Exoscope" 
-                  className="h-40 object-contain"
+                  className="h-48 w-full object-cover"
                 />
               </div>
               <h3 className="text-xl font-semibold mb-3 text-center">Exoscope</h3>
@@ -174,7 +174,7 @@ const EventDetails: React.FC = () => {
                 <img 
                   src={item2} 
                   alt="Surgical Operating Microscope" 
-                  className="h-40 object-contain"
+                  className="h-48 w-full object-cover"
                 />
               </div>
               <h3 className="text-xl font-semibold mb-3 text-center">Surgical Operating Microscope</h3>
@@ -188,7 +188,7 @@ const EventDetails: React.FC = () => {
                 <img 
                   src={item3} 
                   alt="Micro-Surgical Instruments" 
-                  className="h-40 object-contain"
+                  className="h-48 w-32 object-cover"
                 />
               </div>
               <h3 className="text-xl font-semibold mb-3 text-center">Micro-Surgical Instruments</h3>
