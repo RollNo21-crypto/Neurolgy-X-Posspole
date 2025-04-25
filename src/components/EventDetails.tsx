@@ -1,8 +1,8 @@
 import React from 'react';
 import { Calendar, MapPin, Clock, Award } from 'lucide-react';
-import aig1 from '../assets/aig1.png';
-import baxterLogo from '../assets/baxter.png';
-
+import aig1 from '../assets/image.png';
+import supporter2 from '../assets/medix.png';
+import baxterLogo from '../assets/sanma.png';
 const EventDetails: React.FC = () => {
   return (
     <section id="about" className="py-16 md:py-24 bg-white">
@@ -23,7 +23,7 @@ const EventDetails: React.FC = () => {
               <Calendar className="text-blue-600 w-6 h-6" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Date & Time</h3>
-            <p className="text-gray-600">Saturday, May 10th, 2025</p>
+            <p className="text-gray-600">Tuesday, May 14th, 2025</p>
             <p className="text-gray-600">8:30 AM - 6:30 PM</p>
           </div>
           
@@ -32,8 +32,8 @@ const EventDetails: React.FC = () => {
               <MapPin className="text-blue-600 w-6 h-6" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Venue</h3>
-            <p className="text-gray-600">AIG Hospitals</p>
-            <p className="text-gray-600">Hyderabad, India</p>
+            <p className="text-gray-600">Posspole</p>
+            <p className="text-gray-600">Bengaluru, India</p>
           </div>
           
           <div className="bg-white rounded-xl p-6 shadow-md transform transition-all hover:-translate-y-2 border border-gray-100">
@@ -63,19 +63,26 @@ const EventDetails: React.FC = () => {
                 <div className="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mt-1">
                   <span className="text-white text-xs">✓</span>
                 </div>
-                <span className="ml-3 text-gray-700">Comprehensive hands-on experience in Microvascular Anastomosis</span>
+                <span className="ml-3 text-gray-700">Comprehensive hands-on experience in Understanding Instruments and Sutures
+                </span>
               </li>
               <li className="flex items-start">
                 <div className="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mt-1">
                   <span className="text-white text-xs">✓</span>
                 </div>
-                <span className="ml-3 text-gray-700">Expert guidance on managing surgical complications</span>
+                <span className="ml-3 text-gray-700">Beyond flow mindset and Ultramicroneurosurgery for anastomosis</span>
               </li>
               <li className="flex items-start">
                 <div className="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mt-1">
                   <span className="text-white text-xs">✓</span>
                 </div>
-                <span className="ml-3 text-gray-700">Learn innovative techniques for better outcomes</span>
+                <span className="ml-3 text-gray-700">Basic techniques for End to end and end to side Anastomosis</span>
+              </li>
+              <li className="flex items-start">
+                <div className="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mt-1">
+                  <span className="text-white text-xs">✓</span>
+                </div>
+                <span className="ml-3 text-gray-700">Nuances and Common mistakes as well as how to handle them</span>
               </li>
               <li className="flex items-start">
                 <div className="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mt-1">
@@ -87,36 +94,48 @@ const EventDetails: React.FC = () => {
           </div>
           
           <div className="bg-gradient-to-br from-blue-50 to-teal-50 p-8 rounded-xl">
-            <div className="flex flex-col h-full">
-              <img 
-                src="https://images.pexels.com/photos/3376790/pexels-photo-3376790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Medical Workshop"
-                className="w-full h-48 object-cover rounded-lg mb-6"
-              />
-              <div className="grid grid-cols-2 gap-6">
-                <div>
-                  <h4 className="text-lg font-medium text-gray-700 mb-4">Organized by</h4>
-                  <div className="bg-white rounded-lg p-4 flex items-center justify-center">
-                    <img
-                      src={aig1}
-                      alt="Aig Logo"
-                      className="h-20 object-contain"
-                    />
+              <div className="flex flex-col h-full">
+                <img 
+                  src="https://images.pexels.com/photos/3376790/pexels-photo-3376790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt="Medical Workshop"
+                  className="w-full h-48 object-cover rounded-lg mb-6"
+                />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {/* Organized by */}
+                  <div>
+                    <h4 className="text-lg font-medium text-gray-700 mb-4">Organized by</h4>
+                    <div className="bg-white rounded-lg p-4 flex items-center justify-center">
+                      <img
+                        src={aig1}
+                        alt="Aig Logo"
+                        className="h-16 object-contain"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <h4 className="text-lg font-medium text-gray-700 mb-4">Supported by</h4>
-                  <div className="bg-white rounded-lg p-4 flex items-center justify-center">
-                    <img
-                      src={baxterLogo}
-                      alt="Baxter Logo"
-                      className="h-20 object-contain"
-                    />
+
+                  {/* Supported by */}
+                  <div>
+                    <h4 className="text-lg font-medium text-gray-700 mb-4">Supported by</h4>
+                    <div className="grid grid-cols-2 gap-4 bg-white rounded-lg p-4">
+                      <div className="flex items-center justify-center">
+                        <img
+                          src={baxterLogo}
+                          alt="Baxter Logo"
+                          className="h-16 object-contain"
+                        />
+                      </div>
+                      <div className="flex items-center justify-center">
+                        <img
+                          src={supporter2}
+                          alt="Supporter 2"
+                          className="h-16 object-contain"
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </section>

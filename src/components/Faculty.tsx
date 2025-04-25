@@ -1,6 +1,9 @@
 import React from 'react';
-import subhodh from '../assets/subhodh.jpg';
-import suneeth from '../assets/suneeth.jpg';
+import doc1 from '../assets/doc1.jpg';
+import doc2 from '../assets/doc2.jpg';
+import doc3 from '../assets/doc3.png';
+import subhodh from '../assets/subhodh.jpg'; // Make sure the path and file match
+import suneeth from '../assets/suneeth.jpg'; // Make sure the path and file match
 
 const FacultyMember: React.FC<{
   name: string;
@@ -24,24 +27,19 @@ const FacultyMember: React.FC<{
 const Faculty: React.FC = () => {
   const facultyMembers = [
     {
-      name: 'Dr. Vernon Velho',
-      designation: 'Professor & HOD, Dept. of Neurosurgery, Grant Medical College & Sir JJ Group of Hospitals, Mumbai',
-      image: 'https://cdn.jsdelivr.net/gh/posspohealth/faculty-assets/vernon-velho.svg'
+      name: 'Dr. Iype Cherian',
+      designation: 'Director, Institute of Neurosciences, Krishna Vishwa Vidyapeeth, Karad - India',
+      image: doc1,
     },
     {
       name: 'Dr. Vamsi Krishna',
-      designation: 'Professor & HOD, Dept. of Neurosurgery, Nizams Institute of Medical Sciences, Hyderabad',
-      image: 'https://cdn.jsdelivr.net/gh/posspohealth/faculty-assets/vamsi-krishna.svg'
+      designation: 'Professor & HOD, Dept. of Neurosurgery, Nizams Institute of Medical Sciences, Bengaluru',
+      image: doc2,
     },
     {
       name: 'Dr. Nupur Pruthi',
       designation: 'Professor, Dept. of Neurosurgery, NIMHANS, Bangalore',
-      image: 'https://cdn.jsdelivr.net/gh/posspohealth/faculty-assets/nupur-pruthi.svg'
-    },
-    {
-      name: 'Dr. Manas Panigrahi',
-      designation: 'HOD & Sr. Consultant Neurosurgery, KIMS, Hyderabad',
-      image: 'https://cdn.jsdelivr.net/gh/posspohealth/faculty-assets/manas-panigrahi.svg'
+      image: doc3,
     }
   ];
 
@@ -57,8 +55,8 @@ const Faculty: React.FC = () => {
             Learn from the best minds in neurosurgery. Our faculty brings decades of experience and expertise.
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {facultyMembers.map((faculty, index) => (
             <FacultyMember 
               key={index}
@@ -68,8 +66,9 @@ const Faculty: React.FC = () => {
             />
           ))}
         </div>
-        
-        <div className="mt-12 bg-gradient-to-r from-blue-700 to-blue-900 rounded-xl p-6 md:p-8 text-white shadow-2xl">
+
+        {/* Key Personnel Section */}
+        {/* <div className="mt-16 bg-gradient-to-r from-blue-700 to-blue-900 rounded-xl p-6 md:p-8 text-white shadow-2xl">
           <div className="text-center mb-6">
             <h3 className="text-2xl font-bold mb-2">Key Personnel</h3>
             <p className="opacity-90 text-base max-w-2xl mx-auto">
@@ -77,9 +76,12 @@ const Faculty: React.FC = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
+
             <div className="bg-white/15 rounded-xl p-6 backdrop-blur-sm transform hover:scale-105 transition-transform duration-300 shadow-xl border border-white/20">
               <div className="text-center mb-4">
-                <h4 className="text-xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-200">Course Chairman</h4>
+                <h4 className="text-xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-200">
+                  Course Chairman
+                </h4>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-24 h-24 mb-4 relative">
@@ -93,13 +95,17 @@ const Faculty: React.FC = () => {
                 <div className="text-center">
                   <p className="text-xl font-bold mb-1">Dr. Subodh Raju</p>
                   <p className="text-base opacity-90">HOD & Director</p>
-                  <p className="text-sm opacity-80">Neurosurgery & Spine Surgery, AIG Hospitals</p>
+                  <p className="text-sm opacity-80">Neurosurgery & Spine Surgery, Posspole</p>
                 </div>
               </div>
             </div>
+
+          
             <div className="bg-white/15 rounded-xl p-6 backdrop-blur-sm transform hover:scale-105 transition-transform duration-300 shadow-xl border border-white/20">
               <div className="text-center mb-4">
-                <h4 className="text-xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-200">Course Coordinator</h4>
+                <h4 className="text-xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-200">
+                  Course Coordinator
+                </h4>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-24 h-24 mb-4 relative">
@@ -118,7 +124,8 @@ const Faculty: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+       
       </div>
     </section>
   );
