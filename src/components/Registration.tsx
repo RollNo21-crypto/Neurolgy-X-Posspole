@@ -25,7 +25,7 @@ const Registration: React.FC = () => {
             </p>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 mb-10">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
                 <div>
                   <div className="text-4xl font-bold">8</div>
                   <div className="opacity-90">Hours of Training</div>
@@ -33,6 +33,10 @@ const Registration: React.FC = () => {
                 <div>
                   <div className="text-4xl font-bold">3</div>
                   <div className="opacity-90">Practical Sessions</div>
+                </div>
+                <div>
+                  <div className="text-4xl font-bold">2</div>
+                  <div className="opacity-90">Hands On Sessions</div>
                 </div>
                 <div>
                   <div className="text-4xl font-bold">3</div>

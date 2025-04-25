@@ -3,6 +3,10 @@ import { Calendar, MapPin, Clock, Award } from 'lucide-react';
 import aig1 from '../assets/image.png';
 import supporter2 from '../assets/medix.png';
 import baxterLogo from '../assets/sanma.png';
+import item1 from '../assets/image 2 - vac.jpg';
+import item2 from '../assets/image 1 - vac.png';
+import item3 from '../assets/multisurgicle.jpg';
+
 const EventDetails: React.FC = () => {
   return (
     <section id="about" className="py-16 md:py-24 bg-white">
@@ -154,9 +158,9 @@ const EventDetails: React.FC = () => {
             <div className="bg-white rounded-xl p-6 shadow-md transform transition-all hover:-translate-y-2 border border-gray-100">
               <div className="h-48 flex items-center justify-center mb-6">
                 <img 
-                  src="https://cdn-icons-png.flaticon.com/512/2818/2818233.png" 
+                  src= {item1} 
                   alt="Exoscope" 
-                  className="h-32 object-contain"
+                  className="h-40 object-contain"
                 />
               </div>
               <h3 className="text-xl font-semibold mb-3 text-center">Exoscope</h3>
@@ -168,9 +172,9 @@ const EventDetails: React.FC = () => {
             <div className="bg-white rounded-xl p-6 shadow-md transform transition-all hover:-translate-y-2 border border-gray-100">
               <div className="h-48 flex items-center justify-center mb-6">
                 <img 
-                  src="https://cdn-icons-png.flaticon.com/512/4835/4835468.png" 
+                  src={item2} 
                   alt="Surgical Operating Microscope" 
-                  className="h-32 object-contain"
+                  className="h-40 object-contain"
                 />
               </div>
               <h3 className="text-xl font-semibold mb-3 text-center">Surgical Operating Microscope</h3>
@@ -182,9 +186,9 @@ const EventDetails: React.FC = () => {
             <div className="bg-white rounded-xl p-6 shadow-md transform transition-all hover:-translate-y-2 border border-gray-100">
               <div className="h-48 flex items-center justify-center mb-6">
                 <img 
-                  src="https://cdn-icons-png.flaticon.com/512/4320/4320337.png" 
+                  src={item3} 
                   alt="Micro-Surgical Instruments" 
-                  className="h-32 object-contain"
+                  className="h-40 object-contain"
                 />
               </div>
               <h3 className="text-xl font-semibold mb-3 text-center">Micro-Surgical Instruments</h3>
