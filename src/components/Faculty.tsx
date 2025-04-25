@@ -28,17 +28,17 @@ const Faculty: React.FC = () => {
   const facultyMembers = [
     {
       name: 'Dr. Iype Cherian',
-      designation: 'https://neurosurgerycoach.org/',
+      designation: 'https://neurosurgerycoach.org',
       image: doc1,
     },
     {
       name: 'Dr. Dwarakanath Srinivas',
-      designation: 'Professor of Neuro Surgery. NIMHANS, Bengaluru',
+      designation: 'Professor of Neuro Surgery, NIMHANS, Bengaluru',
       image: doc2,
     },
     {
       name: 'Dr. Satish Sathyanarayana',
-      designation: 'Director of Neuro surgery Apollo BG, Bengaluru',
+      designation: 'Director of Neuro Surgery Apollo BG, Bengaluru',
       image: doc3,
     }
   ];
