@@ -32,13 +32,13 @@ const Faculty: React.FC = () => {
       image: doc1,
     },
     {
-      name: 'Dr. Vamsi Krishna',
-      designation: 'Professor & HOD, Dept. of Neurosurgery, Nizams Institute of Medical Sciences, Bengaluru',
+      name: 'Dr. Dwarakanath Srinivas',
+      designation: 'Professor, Head of Dept. of Neurosurgery, NIMHANS, Bangalore',
       image: doc2,
     },
     {
-      name: 'Dr. Nupur Pruthi',
-      designation: 'Professor, Dept. of Neurosurgery, NIMHANS, Bangalore',
+      name: 'Dr. Satish Sathyanarayana',
+      designation: 'Sr. Neuro Surgeon Apollo Hospitals, Bangalore',
       image: doc3,
     }
   ];
