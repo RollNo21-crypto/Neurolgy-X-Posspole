@@ -137,6 +137,70 @@ const EventDetails: React.FC = () => {
               </div>
             </div>
         </div>
+
+        {/* Devices & Instruments Section */}
+        <div className="mt-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              Devices & <span className="text-blue-600">Instruments</span>
+            </h2>
+            <div className="w-20 h-1 bg-blue-600 mx-auto my-6"></div>
+            <p className="text-gray-600 max-w-3xl mx-auto">
+              State-of-the-art equipment and instruments provided for each participant
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-xl p-6 shadow-md transform transition-all hover:-translate-y-2 border border-gray-100">
+              <div className="h-48 flex items-center justify-center mb-6">
+                <img 
+                  src="https://cdn-icons-png.flaticon.com/512/2818/2818233.png" 
+                  alt="Exoscope" 
+                  className="h-32 object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-center">Exoscope</h3>
+              <p className="text-gray-600 text-center">
+                Advanced digital surgical visualization system for enhanced precision and teaching capabilities
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 shadow-md transform transition-all hover:-translate-y-2 border border-gray-100">
+              <div className="h-48 flex items-center justify-center mb-6">
+                <img 
+                  src="https://cdn-icons-png.flaticon.com/512/4835/4835468.png" 
+                  alt="Surgical Operating Microscope" 
+                  className="h-32 object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-center">Surgical Operating Microscope</h3>
+              <p className="text-gray-600 text-center">
+                Individual microscopes for each participant ensuring optimal visualization during procedures
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 shadow-md transform transition-all hover:-translate-y-2 border border-gray-100">
+              <div className="h-48 flex items-center justify-center mb-6">
+                <img 
+                  src="https://cdn-icons-png.flaticon.com/512/4320/4320337.png" 
+                  alt="Micro-Surgical Instruments" 
+                  className="h-32 object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-center">Micro-Surgical Instruments</h3>
+              <p className="text-gray-600 text-center">
+                Complete set of precision instruments for performing delicate microsurgical procedures
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-12 bg-blue-50 rounded-xl p-8 text-center">
+            <blockquote className="text-xl italic text-gray-700">
+              "You cannot teach a man anything; you can only help him find it within himself"
+            </blockquote>
+            <p className="mt-4 text-gray-600">- Galileo Galilei</p>
+          </div>
+        </div>
       </div>
     </section>
   );

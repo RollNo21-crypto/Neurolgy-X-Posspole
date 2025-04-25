@@ -13,42 +13,52 @@ const Schedule: React.FC = () => {
   
   const scheduleItems: ScheduleItem[] = [
     {
-      startTime: '08:30 AM',
+      startTime: '09:00 AM',
+      endTime: '09:30 AM',
+      activity: 'Inauguration'
+    },
+    {
+      startTime: '09:30 AM',
+      endTime: '10:00 AM',
+      activity: 'Lecture & Surgical Video Presentation by Dr. Dwaraknath',
+      batch: 'Session 1'
+    },
+    {
+      startTime: '10:00 AM',
+      endTime: '10:30 AM',
+      activity: 'Lecture & Surgical Video Presentation by Dr. Satish Sathyanarayana',
+      batch: 'Session 2'
+    },
+    {
+      startTime: '10:30 AM',
+      endTime: '11:00 AM',
+      activity: 'Lecture & Surgical Video Presentation by Dr. Iype Cherian',
+      batch: 'Session 3'
+    },
+    {
+      startTime: '11:00 AM',
       endTime: '11:15 AM',
-      activity: 'Workshop on Porcine Models'
+      activity: 'Coffee / Tea Break'
     },
     {
       startTime: '11:15 AM',
-      endTime: '11:30 AM',
-      activity: 'Tea Break'
+      endTime: '1:00 PM',
+      activity: 'Hands On'
     },
     {
-      startTime: '11:30 AM',
-      endTime: '01:30 PM',
-      activity: 'Microvascular Anastomosis',
-      batch: 'Batch 1'
+      startTime: '01:00 PM',
+      endTime: '01:45 PM',
+      activity: 'Lunch Break'
     },
     {
-      startTime: '01:30 PM',
-      endTime: '02:15 PM',
-      activity: 'Lunch'
+      startTime: '01:45 PM',
+      endTime: '05:00 PM',
+      activity: 'Hands On'
     },
     {
-      startTime: '02:15 PM',
-      endTime: '04:15 PM',
-      activity: 'Microvascular Anastomosis',
-      batch: 'Batch 2'
-    },
-    {
-      startTime: '04:15 PM',
-      endTime: '04:30 PM',
-      activity: 'Tea Break'
-    },
-    {
-      startTime: '04:30 PM',
-      endTime: '06:30 PM',
-      activity: 'Microvascular Anastomosis',
-      batch: 'Batch 3'
+      startTime: '05:00 PM',
+      endTime: '05:15 PM',
+      activity: 'Vote of Thanks'
     }
   ];
   
@@ -84,33 +94,33 @@ const Schedule: React.FC = () => {
               </button>
               <button 
                 className={`px-4 py-2 rounded-md transition-all ${
-                  activeTab === 'Batch 1' 
+                  activeTab === 'Session 1' 
                     ? 'bg-blue-600 text-white shadow-md' 
                     : 'text-gray-700 hover:bg-gray-200'
                 }`}
-                onClick={() => setActiveTab('Batch 1')}
+                onClick={() => setActiveTab('Session 1')}
               >
-                Batch 1
+                Session 1
               </button>
               <button 
                 className={`px-4 py-2 rounded-md transition-all ${
-                  activeTab === 'Batch 2' 
+                  activeTab === 'Session 2' 
                     ? 'bg-blue-600 text-white shadow-md' 
                     : 'text-gray-700 hover:bg-gray-200'
                 }`}
-                onClick={() => setActiveTab('Batch 2')}
+                onClick={() => setActiveTab('Session 2')}
               >
-                Batch 2
+                Session 2
               </button>
               <button 
                 className={`px-4 py-2 rounded-md transition-all ${
-                  activeTab === 'Batch 3' 
+                  activeTab === 'Session 3' 
                     ? 'bg-blue-600 text-white shadow-md' 
                     : 'text-gray-700 hover:bg-gray-200'
                 }`}
-                onClick={() => setActiveTab('Batch 3')}
+                onClick={() => setActiveTab('Session 3')}
               >
-                Batch 3
+                Session 3
               </button>
             </div>
           </div>
