@@ -214,7 +214,7 @@ function App() {
               ))}
               <motion.a
                 whileHover={{ scale: 1.05 }}
-                href="https://forms.gle/JMN2vpPXhb6Cfi9b7"
+                href="https://forms.gle/CKwhJNhdNU6fXLi69"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`px-6 py-2 rounded-full ${
@@ -259,7 +259,7 @@ function App() {
               ))}
               <motion.a
                 whileHover={{ x: 10 }}
-                href="https://forms.gle/JMN2vpPXhb6Cfi9b7"
+                href="https://forms.gle/CKwhJNhdNU6fXLi69"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full text-left text-blue-900 font-medium py-2 hover:text-blue-600"
@@ -347,7 +347,7 @@ function App() {
               className="text-center"
             >
               <a
-                href="https://forms.gle/JMN2vpPXhb6Cfi9b7"
+                href="https://forms.gle/CKwhJNhdNU6fXLi69"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-full text-lg font-medium transition-all transform hover:scale-105"
