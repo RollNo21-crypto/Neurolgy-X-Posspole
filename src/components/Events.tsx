@@ -61,12 +61,12 @@ const Events: React.FC = () => {
     // },
     {
       id: 'neuro-imaging-2023',
-      title: 'Neuroimaging Interpretation Workshop',
+      title: 'AI in Urology and Robotic Surgery Symposium',
       date: 'May 13th, 2025',
-      description: 'A comprehensive workshop on interpreting various neuroimaging techniques for accurate diagnosis.',
+      description: 'Explore the latest innovations in AI-driven diagnostics, robotic surgery, and surgical education.',
       imageUrl: 'https://images.pexels.com/photos/4226119/pexels-photo-4226119.jpeg?auto=compress&cs=tinysrgb&w=1600',
       category: 'upcoming',
-      type: 'Imaging Workshop',
+      type: 'Artificial Intelligence',
       path: '/event/neuro-imaging-2023'
     }
   ];
