@@ -177,7 +177,7 @@ const NeurosurgeryWorkshop2025: React.FC = () => {
             
             {/* Organization Section - Right Side */}
             <div className="h-full">
-              <h3 className="text-2xl font-bold mb-6 text-gray-800">Organization</h3>
+              <h3 className="text-2xl font-bold mb-6 text-gray-800">Organizers</h3>
               <div className="bg-gradient-to-br from-blue-50 to-teal-50 p-8 rounded-xl h-full">
                 <div className="flex flex-col h-full">
                   <img 
