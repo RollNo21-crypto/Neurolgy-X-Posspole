@@ -1,4 +1,13 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MainPage from './pages/MainPage';
+// Import individual event pages instead of generic EventPage
+import NeurosurgeryWorkshop2025 from './pages/events/NeurosurgeryWorkshop2025';
+import NeurologyConference2024 from './pages/events/NeurologyConference2024';
+import BrainTumorWorkshop2024 from './pages/events/BrainTumorWorkshop2024';
+import SpineSurgery2024 from './pages/events/SpineSurgery2024';
+import NeuroImaging2023 from './pages/events/NeuroImaging2023';
+// Import other components
 import Header from './components/Header';
 import Hero from './components/Hero';
 import EventDetails from './components/EventDetails';
@@ -9,18 +18,19 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
-      <main className="flex-grow">
-        <Hero />
-        <EventDetails />
-        <Faculty />
-        <Schedule />
-        <Registration />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        {/* Individual routes for each event with custom pages */}
+        <Route path="/event/neurosurgery-workshop-2025" element={<NeurosurgeryWorkshop2025 />} />
+        <Route path="/event/neurology-conference-2024" element={<NeurologyConference2024 />} />
+        <Route path="/event/brain-tumor-workshop-2024" element={<BrainTumorWorkshop2024 />} />
+        <Route path="/event/spine-surgery-2024" element={<SpineSurgery2024 />} />
+        <Route path="/event/neuro-imaging-2023" element={<NeuroImaging2023 />} />
+      </Routes>
+    </Router>
   );
+
 }
 
 export default App;

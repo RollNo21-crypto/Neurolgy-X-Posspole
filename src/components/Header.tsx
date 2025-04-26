@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../assets/image.png';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -22,8 +23,11 @@ const Header: React.FC = () => {
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
-        <div className="flex items-center">
-          <img src={logo} alt="AIG Hospitals Logo" className="h-8 mr-3" />
+      
+      <div className="flex items-center">
+      <Link to="/">
+            <img src={logo} alt="AIG Hospitals Logo" className="h-8 mr-3" />
+          </Link>
           {/* <div>
             <h1 className="font-bold text-xl md:text-2xl text-blue-700">AIG Hospitals</h1>
             <p className="text-xs text-gray-600">Advanced Medical Excellence</p>
@@ -32,9 +36,9 @@ const Header: React.FC = () => {
         
         <div className="flex items-center space-x-4">
           <nav className="hidden md:flex space-x-6 mr-6">
-            <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">About</a>
-            <a href="#faculty" className="text-gray-700 hover:text-blue-600 transition-colors">Faculty</a>
-            <a href="#schedule" className="text-gray-700 hover:text-blue-600 transition-colors">Schedule</a>
+            <a href="/" className="text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+            <a href="/#events" className="text-gray-700 hover:text-blue-600 transition-colors">Events</a>
+            <a href="/#about-us" className="text-gray-700 hover:text-blue-600 transition-colors">About Us</a>
           </nav>
           
           <a

@@ -140,7 +140,7 @@ const EventDetails: React.FC = () => {
                 </div>
               </div>
             </div>
-        </div>
+          </div>
 
         {/* Devices & Instruments Section */}
         <div className="mt-16">
