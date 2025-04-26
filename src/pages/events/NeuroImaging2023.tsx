@@ -12,6 +12,7 @@ import item3 from '../../assets/multisurgicle.jpg';
 import Schedule from '../../components/neurosurgery/Schedule';
 import WhoAre from '../../components/WhoArePosspole';
 import Registration from '../../components/neurosurgery/Registration';
+import Faculty from '../../components/Faculty';
 
 const NeurosurgeryWorkshop2025: React.FC = () => {
   // Event specific data
@@ -26,18 +27,18 @@ const NeurosurgeryWorkshop2025: React.FC = () => {
     type: 'Microvascular Anastomosis Workshop',
   };
 
-  // Event specific schedule
-  const schedule = [
-    { time: '09:00 AM - 09:30 AM', activity: 'Inauguration' },
-    { time: '09:30 AM - 10:00 AM', activity: 'Lecture & Surgical Video Presentation by Dr. Dwaraknath' },
-    { time: '10:00 AM - 10:30 AM', activity: 'Lecture & Surgical Video Presentation by Dr. Satish Sathyanarayana' },
-    { time: '10:30 AM - 11:00 AM', activity: 'Lecture & Surgical Video Presentation by Dr. Iype Cherian' },
-    { time: '11:00 AM - 11:15 AM', activity: 'Coffee / Tea Break' },
-    { time: '11:15 AM - 01:00 PM', activity: 'Hands On Session' },
-    { time: '01:00 PM - 01:45 PM', activity: 'Lunch Break' },
-    { time: '01:45 PM - 05:00 PM', activity: 'Hands On Session' },
-    { time: '05:00 PM - 05:15 PM', activity: 'Vote of Thanks' }
-  ];
+  // // Event specific schedule
+  // const schedule = [
+  //   { time: '09:00 AM - 09:30 AM', activity: 'Inauguration' },
+  //   { time: '09:30 AM - 10:00 AM', activity: 'Lecture & Surgical Video Presentation by Dr. Dwaraknath' },
+  //   { time: '10:00 AM - 10:30 AM', activity: 'Lecture & Surgical Video Presentation by Dr. Satish Sathyanarayana' },
+  //   { time: '10:30 AM - 11:00 AM', activity: 'Lecture & Surgical Video Presentation by Dr. Iype Cherian' },
+  //   { time: '11:00 AM - 11:15 AM', activity: 'Coffee / Tea Break' },
+  //   { time: '11:15 AM - 01:00 PM', activity: 'Hands On Session' },
+  //   { time: '01:00 PM - 01:45 PM', activity: 'Lunch Break' },
+  //   { time: '01:45 PM - 05:00 PM', activity: 'Hands On Session' },
+  //   { time: '05:00 PM - 05:15 PM', activity: 'Vote of Thanks' }
+  // ];
 
   // Event specific highlights
   const highlights = [
@@ -48,24 +49,24 @@ const NeurosurgeryWorkshop2025: React.FC = () => {
     'Network with leading experts in neurosurgery'
   ];
 
-  // Event specific faculty
-  const faculty = [
-    {
-      name: 'Dr. Dwaraknath',
-      role: 'Senior Neurosurgeon',
-      bio: 'Dr. Dwaraknath is a renowned neurosurgeon with over 20 years of experience in microvascular anastomosis techniques.'
-    },
-    {
-      name: 'Dr. Satish Sathyanarayana',
-      role: 'Neurosurgery Specialist',
-      bio: 'Dr. Satish specializes in complex neurosurgical procedures and has conducted numerous workshops worldwide.'
-    },
-    {
-      name: 'Dr. Iype Cherian',
-      role: 'Professor of Neurosurgery',
-      bio: 'Dr. Iype is a distinguished professor and practitioner known for his innovative approaches to neurosurgical challenges.'
-    }
-  ];
+  // // Event specific faculty
+  // const faculty = [
+  //   {
+  //     name: 'Dr. Dwaraknath',
+  //     role: 'Senior Neurosurgeon',
+  //     bio: 'Dr. Dwaraknath is a renowned neurosurgeon with over 20 years of experience in microvascular anastomosis techniques.'
+  //   },
+  //   {
+  //     name: 'Dr. Satish Sathyanarayana',
+  //     role: 'Neurosurgery Specialist',
+  //     bio: 'Dr. Satish specializes in complex neurosurgical procedures and has conducted numerous workshops worldwide.'
+  //   },
+  //   {
+  //     name: 'Dr. Iype Cherian',
+  //     role: 'Professor of Neurosurgery',
+  //     bio: 'Dr. Iype is a distinguished professor and practitioner known for his innovative approaches to neurosurgical challenges.'
+  //   }
+  // ];
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -74,37 +75,69 @@ const NeurosurgeryWorkshop2025: React.FC = () => {
         {/* Hero Section */}
         <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-r from-blue-50 to-teal-50 relative overflow-hidden">
           <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: `url(${event.imageUrl})` }}></div>
-          
+
           <div className="container mx-auto px-4 md:px-6 relative z-10">
             <Link to="/" className="inline-flex items-center text-blue-600 hover:text-blue-800 mb-6">
               <ArrowLeft className="w-4 h-4 mr-1" />
               Back to Events
             </Link>
-            
-            <div className="max-w-4xl mx-auto">
+
+            <div className="max-w-4xl mx-auto text-center"> {/* <-- Added text-center here */}
               <div className="inline-block mb-4 px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
                 {event.date} • {event.location}
               </div>
-              
-              <h1 className="text-3xl md:text-5xl font-bold mb-6 text-gray-800 leading-tight">
+
+              <h1 className="text-3xl md:text-5xl font-bold mb-6 text-gray-800 leading-tight text-center">
                 {event.title}
               </h1>
-              
-              <p className="text-lg md:text-xl text-gray-600 mb-8">
+
+              <p className="text-lg md:text-xl text-gray-600 mb-8 text-center">
                 {event.description}
               </p>
-              
-              <a
-                href="https://forms.gle/JMN2vpPXhb6Cfi9b7"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-md inline-block"
-              >
-                Register Now
-              </a>
+
+              <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-8">
+                <a
+                  href="https://forms.gle/JMN2vpPXhb6Cfi9b7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-md inline-block"
+                >
+                  Register Now
+                </a>
+                <a
+                  href="#schedule"
+                  className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-medium py-3 px-8 rounded-full transition-all inline-block"
+                >
+                  View Schedule
+                </a>
+              </div>
+            </div>
+
+            <div className="mt-10 flex flex-wrap justify-center items-center gap-8">
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-white rounded-full shadow-md flex items-center justify-center">
+                  <span className="text-blue-600 font-semibold">1</span>
+                </div>
+                <span className="ml-3 text-gray-700">Practical Workshop</span>
+              </div>
+
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-white rounded-full shadow-md flex items-center justify-center">
+                  <span className="text-blue-600 font-semibold">8</span>
+                </div>
+                <span className="ml-3 text-gray-700">Hours Training</span>
+              </div>
+
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-white rounded-full shadow-md flex items-center justify-center">
+                  <span className="text-blue-600 font-semibold">3</span>
+                </div>
+                <span className="ml-3 text-gray-700">Expert Faculty</span>
+              </div>
             </div>
           </div>
         </section>
+
         
         {/* Event Details */}
         <section className="py-16 md:py-24 bg-white">
@@ -297,7 +330,7 @@ const NeurosurgeryWorkshop2025: React.FC = () => {
             <Schedule />
             
             {/* Faculty */}
-            <div>
+            {/* <div>
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
                   Event <span className="text-blue-600">Faculty</span>
@@ -313,7 +346,10 @@ const NeurosurgeryWorkshop2025: React.FC = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
+
+            <Faculty />
+
           </div>
         </section>
 
