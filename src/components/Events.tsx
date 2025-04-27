@@ -20,14 +20,14 @@ const Events: React.FC = () => {
   // Hardcoded events data instead of using eventData
   const events: EventInfo[] = [
     {
-      id: 'neurosurgery-workshop-2025',
-      title: 'Hands-on Workshop to Navigate Challenges in Neurosurgical Procedures',
+      id: 'urosurgery-workshop-2025',
+      title: 'Hands-on Workshop to Navigate Challenges in Urosurgical Procedures',
       date: 'May 14th, 2025',
-      description: 'A comprehensive hands-on workshop designed for neurosurgeons to master microvascular anastomosis techniques and navigate surgical challenges.',
+      description: 'A comprehensive hands-on workshop designed for urosurgeons to master microvascular anastomosis techniques and navigate surgical challenges.',
       imageUrl: 'https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg?auto=compress&cs=tinysrgb&w=1600',
       category: 'upcoming',
       type: 'Workshop',
-      path: '/event/neurosurgery-workshop-2025'
+      path: '/event/urosurgery-workshop-2025'
     },
     // {
     //   id: 'neurology-conference-2024',
@@ -60,14 +60,14 @@ const Events: React.FC = () => {
     //   path: '/event/spine-surgery-2024'
     // },
     {
-      id: 'neuro-imaging-2023',
+      id: 'neurology-workshop-2025',
       title: 'AI in Urology and Robotic Surgery Symposium',
       date: 'May 13th, 2025',
       description: 'Explore the latest innovations in AI-driven diagnostics, robotic surgery, and surgical education.',
       imageUrl: 'https://images.pexels.com/photos/4226119/pexels-photo-4226119.jpeg?auto=compress&cs=tinysrgb&w=1600',
       category: 'upcoming',
       type: 'Artificial Intelligence',
-      path: '/event/neuro-imaging-2023'
+      path: '/event/neurology-workshop-2025'
     }
   ];
   

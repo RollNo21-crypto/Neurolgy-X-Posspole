@@ -14,10 +14,10 @@ import WhoAre from '../../components/WhoArePosspole';
 import Registration from '../../components/neurosurgery/Registration';
 import Faculty from '../../components/Faculty';
 
-const NeurosurgeryWorkshop2025: React.FC = () => {
+const NeurologyWorkshop2025: React.FC = () => {
   // Event specific data
   const event = {
-    id: 'neurosurgery-workshop-2025',
+    id: 'neurology-workshop-2025',
     title: 'Hands-on Workshop to Navigate Challenges in Neurosurgical Procedures',
     date: 'May 14th, 2025',
     location: 'Posspole, Bengaluru',
@@ -362,4 +362,4 @@ const NeurosurgeryWorkshop2025: React.FC = () => {
   );
 };
 
-export default NeurosurgeryWorkshop2025;
+export default NeurologyWorkshop2025;
