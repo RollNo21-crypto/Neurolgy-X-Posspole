@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
       title: 'Urology AI in Urology ',
       subtitle: '& Robotic Surgery Symposium',
       description: 'Join leading experts to explore cutting-edge advancements in AI applications and robotic technologies in urologic practice.',
-      date: 'May 14th, 2025',
+      date: 'May 13th, 2025',
       location: 'Posspole, Bengaluru',
       registrationLink: 'https://forms.gle/YTN3Ma1rBUFxq3Bp9'
     }
