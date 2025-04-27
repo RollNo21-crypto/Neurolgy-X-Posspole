@@ -26,7 +26,7 @@ const Events: React.FC = () => {
       description: 'A comprehensive hands-on workshop designed for neurosurgeons to master microvascular anastomosis techniques and navigate surgical challenges.',
       imageUrl: 'https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg?auto=compress&cs=tinysrgb&w=1600',
       category: 'upcoming',
-      type: 'Microvascular Anastomosis Workshop',
+      type: 'Workshop',
       path: '/event/neurosurgery-workshop-2025'
     },
     // {
