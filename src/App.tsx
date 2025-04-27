@@ -6,7 +6,7 @@ import NeurosurgeryWorkshop2025 from './pages/events/NeurosurgeryWorkshop2025';
 import NeurologyConference2024 from './pages/events/NeurologyConference2024';
 import BrainTumorWorkshop2024 from './pages/events/BrainTumorWorkshop2024';
 import SpineSurgery2024 from './pages/events/SpineSurgery2024';
-import NeuroImaging2023 from './pages/events/NeuroImaging2023';
+import NeuroImaging2023 from './pages/events/neuroimaging2023';
 // Import other components
 import Header from './components/Header';
 import Hero from './components/Hero';
